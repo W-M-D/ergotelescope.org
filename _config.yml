@@ -2,10 +2,11 @@
 title: ERGO Telescope
 email: matthew.d.weger@gmail.com
 description: "A site for the ergotelescope project that displays the data in a user friendly and accessible manner"
-baseurl: ""
+baseurl: "/ergotest"
 url: "https://www.ergotelescope.org"
 twitter_username: 
 github_username: ergotelescope 
+facebook_username: ERGO-Energetic-Ray-Global-Observatory-203785143026589
 
 # Build settings
 markdown: kramdown

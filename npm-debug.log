@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'font_awesome' ]
+2 info using npm@1.4.21
+3 info using node@v4.4.7
+4 warn package.json coldplazma@0.1.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'font_awesome', null ]
+7 verbose cache add name=undefined spec="font_awesome" args=["font_awesome",null]
+8 verbose parsed url Url {
+8 verbose parsed url   protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'font_awesome',
+8 verbose parsed url   path: 'font_awesome',
+8 verbose parsed url   href: 'font_awesome' }
+9 silly lockFile 681e823a-font-awesome font_awesome
+10 verbose lock font_awesome /home/neophobia/.npm/681e823a-font-awesome.lock
+11 silly lockFile 681e823a-font-awesome font_awesome
+12 silly lockFile 681e823a-font-awesome font_awesome
+13 verbose addNamed [ 'font_awesome', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile dacd6634-font-awesome font_awesome@
+16 verbose lock font_awesome@ /home/neophobia/.npm/dacd6634-font-awesome.lock
+17 silly addNameRange { name: 'font_awesome', range: '*', hasData: false }
+18 verbose request where is /font_awesome
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id 1bac91757cb1d2cc
+21 verbose url raw /font_awesome
+22 verbose url resolving [ 'https://registry.npmjs.org/', './font_awesome' ]
+23 verbose url resolved https://registry.npmjs.org/font_awesome
+24 verbose request where is https://registry.npmjs.org/font_awesome
+25 info trying registry request attempt 1 at 2:49:52 PM
+26 http GET https://registry.npmjs.org/font_awesome
+27 http 404 https://registry.npmjs.org/font_awesome
+28 silly registry.get cb [ 404,
+28 silly registry.get   { 'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '2',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     date: 'Fri, 12 Aug 2016 18:49:52 GMT',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     connection: 'close',
+28 silly registry.get     'x-served-by': 'cache-atl6233-ATL',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1471027792.431737,VS0,VE90',
+28 silly registry.get     vary: 'Accept-Encoding' } ]
+29 silly lockFile dacd6634-font-awesome font_awesome@
+30 silly lockFile dacd6634-font-awesome font_awesome@
+31 error 404 Not Found
+31 error 404
+31 error 404 'font_awesome' is not in the npm registry.
+31 error 404 You should bug the author to publish it
+31 error 404 It was specified as a dependency of 'coldplazma'
+31 error 404
+31 error 404 Note that you can also install from a
+31 error 404 tarball, folder, or http url, or git url.
+32 error System Linux 4.6.0-1-amd64
+33 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "font_awesome"
+34 error cwd /home/neophobia/Projects/Website/ergotelescope.org
+35 error node -v v4.4.7
+36 error npm -v 1.4.21
+37 error code E404
+38 verbose exit [ 1, true ]
