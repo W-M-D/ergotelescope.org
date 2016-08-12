@@ -8,15 +8,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{base}}/index.html">{{site.title}}</a>
+          <a class="navbar-brand" href="{{site.baseurl}}/index.html">{{site.title}}</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
           {% for node in site.pages %}
              {% if page.url == node.url %}
-               <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+               <li class="active"><a href="{{site.baseurl}}{{node.url}}" class="active">{{node.title}}</a></li>
              {% else %}
-               <li><a href="{{node.url}}">{{node.title}}</a></li>
+               <li><a href="{{site.baseurl}}{{node.url}}">{{node.title}}</a></li>
              {% endif %}
           {% endfor %}
           {% for collection in site.collections %}
@@ -24,7 +24,7 @@
 	      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ collection.label }}<span class="caret"></span></a>
 	      <ul class="dropdown-menu">
                 {% for doc in collection.docs %}
-		<li><a href="{{doc.url}}" >{{doc.title}}</a></li>
+		<li><a href="{{site.baseurl}}{{doc.url}}" >{{doc.title}}</a></li>
                 {% endfor %}
 	      </ul>
 	    </li>
