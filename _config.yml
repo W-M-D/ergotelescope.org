@@ -1,0 +1,15 @@
+# Site settings
+title: ERGO Telescope
+email: matthew.d.weger@gmail.com
+description: "A site for the ergotelescope project that displays the data in a user friendly and accessible manner"
+baseurl: ""
+url: "https://www.ergotelescope.org"
+twitter_username: 
+github_username: ergotelescope 
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+exclude: [ 'css', '_scss', '*.yaml']
+keep_files: ['_site/css']
