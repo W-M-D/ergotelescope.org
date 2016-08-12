@@ -20,14 +20,16 @@
                <li><a href="{{node.url}}">{{node.title}}</a></li>
              {% endif %}
           {% endfor %}
+          {% for collection in site.collections %}
 	    <li class="dropdown">
-	      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+	      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ collection.label }}<span class="caret"></span></a>
 	      <ul class="dropdown-menu">
-		<li><a href="https://github.com/{{site.github_username}}" >Github</a></li>
-		<li role="separator" class="divider"></li>
-		<li class="dropdown-header">Other projects</li>
+                {% for doc in collection.docs %}
+		<li><a href="{{doc.url}}" >{{doc.title}}</a></li>
+                {% endfor %}
 	      </ul>
 	    </li>
+            {% endfor %}
           </ul>
           <ul class="nav navbar-nav navbar-right">
           </ul>

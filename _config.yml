@@ -11,5 +11,12 @@ github_username: ergotelescope
 markdown: kramdown
 permalink: pretty
 
+#colletions
+collections:
+     maps:
+       output: true
+
 exclude: [ 'css', '_scss', '*.yaml']
 keep_files: ['_site/css']
+
+
