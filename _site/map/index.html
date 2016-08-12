@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home</title>
+    <title>regularmap</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="A site for the ergotelescope project that displays the data in a user friendly and accessible manner">
-    <link rel="canonical" href="https://www.ergotelescope.org/">
+    <link rel="canonical" href="https://www.ergotelescope.org/map/">
 
     <!-- Bootstrap core CSS -->
     <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-     <style>
-      body  {
-          background-image: url('/assets/Background.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          color:white;
-          background-size: cover;
-          background-position: center
-      }
-      </style>
+	<style>
+	#map {
+        background:black;display: block;
+        position:absolute;
+        height:auto;
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        margin-top:50px; /* adjust top margin to your header height */
+	}
+	</style>
 
 </head>
 
-
-    <body>
-
-    <header class="site-header">
-
-</header>
-
-    
+  
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -50,11 +43,11 @@
           <ul class="nav navbar-nav">
           
              
-               <li class="active"><a href="/" class="active">Home</a></li>
+               <li><a href="/">Home</a></li>
              
           
              
-               <li><a href="/map/">regularmap</a></li>
+               <li class="active"><a href="/map/" class="active">regularmap</a></li>
              
           
 	    <li class="dropdown">
@@ -72,40 +65,21 @@
       </div>
     </nav>
 
-        <div class="container">
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div style=" background:rgba(54, 54, 54, 0.5) !important"  class="jumbotron">
-      <div class="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    
-  </ul>
-
-
-</div>
- 
-      </div>
-
-    </div> <!-- /container -->
-
-
-    <footer class="site-footer">
-
-</footer>
-
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../node_modules/bootstrap/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-
-
-
-
-    </body>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 44.540, lng: -78.546},
+            zoom: 8
+        });
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIRfFjHReAd31k3WJ3cw49svRPNlG-DMU&callback=initMap">
+    </script>
+  </body>
 </html>
